@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TAsk_3 {
+public class Task_3 {
     static Scanner scanner = new Scanner(System.in);
 
     static int maiorQue(int num1, int num2){
