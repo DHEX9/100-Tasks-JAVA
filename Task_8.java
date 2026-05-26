@@ -37,5 +37,6 @@ public class Task_8 {
         else{
             System.out.println("Não Palíndromo");
         }
+        scanner.close();
     }
 }

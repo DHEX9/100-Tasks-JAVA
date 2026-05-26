@@ -13,5 +13,6 @@ public class Task_6 {
 		    total *=  i;
 		}
 		System.out.println("Fatorial de " + num + ": " + total);
+		scanner.close();
 	}
 }

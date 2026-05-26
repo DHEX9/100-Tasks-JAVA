@@ -21,5 +21,6 @@ public class Task_3 {
         maior = maiorQue(maior, num3);
 
         System.out.println("Maior numero: " + maior);
+        scanner.close();
     }
 }

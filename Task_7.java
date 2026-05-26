@@ -19,5 +19,6 @@ public class Task_7 {
             proximo = aux;
         }
         System.out.print(atual);
+        scanner.close();
     }
 }

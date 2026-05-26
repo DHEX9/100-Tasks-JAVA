@@ -20,5 +20,6 @@ public class Task_5 {
 		else{
 		    System.out.println("Não Primo");
 		}
+		scanner.close();
 	}
 }
