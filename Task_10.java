@@ -6,13 +6,17 @@ public class Task_10 {
     static Scanner scanner = new Scanner(System.in);
     
     public static void main(String[] args){
-        int num;
-        ArrayList<Integer> nums = new ArrayList<>();
 
-        while(scanner.hasNextInt()){
-            nums.add(num = scanner.nextInt());
-        }
+        ArrayList<Integer> nums = new ArrayList<>();
+        String linha = scanner.nextLine();
         scanner.close();
+        String[] partes = linha.trim().split("\\s+");
+
+        for(String p : partes){
+            nums.add(Integer.parseInt(p));
+        }
+
+        nums.sort(null);
 
         System.out.println(nums);
     }
