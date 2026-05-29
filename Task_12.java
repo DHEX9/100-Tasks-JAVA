@@ -1,9 +1,8 @@
 import java.util.Scanner;
 
 public class Task_12 {
-    static Scanner scanner = new Scanner(System.in);
 
-    
+    static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args){
         int num, num2;
         int div = 2, mmc = 1, mdc = 1;
@@ -27,9 +26,7 @@ public class Task_12 {
    
                 if(num2%div == 0){
                     num2 /= div;
-                }
-
-                    
+                }   
            }
            else{
                 div++;
