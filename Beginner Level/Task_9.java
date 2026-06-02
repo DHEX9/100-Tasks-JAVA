@@ -16,7 +16,6 @@ public class Task_9 {
             caractere = palavra.charAt(i);
             
             if(Character.isLetter(caractere)){
-                System.out.println("Passei aqui");
                 if("aeiou".contains(String.valueOf(caractere))){
                     vogais++;
                 }
