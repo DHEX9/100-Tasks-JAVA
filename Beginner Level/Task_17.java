@@ -7,6 +7,7 @@ public class Task_17 {
         
         System.out.println("Entre com uma sequência de números:");
         String[] partes = scanner.nextLine().trim().split("\\s+");
+        scanner.close();
 
         int maior = Integer.parseInt(partes[0]);
 

@@ -8,6 +8,7 @@ public class Task_12 {
         int div = 2, mmc = 1, mdc = 1;
         System.out.println("Entre com dois valores:");
         num = scanner.nextInt(); num2 = scanner.nextInt();
+        scanner.close();
 
         while((num != 1) || (num2 != 1)){
             

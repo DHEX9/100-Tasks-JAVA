@@ -9,7 +9,8 @@ public class Task_18 {
 
         String[] nums = scanner.nextLine().trim().split("\\s+");
         double average = 0, counter = 0;
-
+        scanner.close();
+        
         for(int i = 0; i < nums.length; i++){
             average += Double.parseDouble(nums[i]);
             counter++;

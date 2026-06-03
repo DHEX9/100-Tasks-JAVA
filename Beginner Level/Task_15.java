@@ -37,5 +37,6 @@ public class Task_15 {
             num = ((num - 32) * 5) / 9;
             System.out.println(num + "°C");
         }
+        scanner.close();
     }
 } 

@@ -7,6 +7,7 @@ public class Task_19 {
         System.out.println("Entre com seu número:");
 
         int num = scanner.nextInt(), counter = 0;
+        scanner.close();
 
         //Com string
         String str_num = String.valueOf(num);

@@ -29,5 +29,6 @@ public class Task_20 {
         else{
             System.out.println("Não Armstrong");
         }
+        scanner.close();
     }
 }
