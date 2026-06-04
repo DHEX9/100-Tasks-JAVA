@@ -30,9 +30,9 @@ public class Task_24 {
         return nums;
     }
 
-    static int equal(int[] nums){
+    static int greatest_repeated(int[] nums){
         int count = 0;
-
+        
         for(int i = 0; i < nums.length; i++){
             if(nums[nums.length - 2] == nums[i]){
                 count++;
@@ -51,17 +51,23 @@ public class Task_24 {
         //Cria arrays de tamanhos dinâmicos.
         int[] nums = createArray();
 
+        //Verifica se tem apenas um elemento.
+        if(nums.length == 1){
+            System.out.println("Não existe segundo maior");
+            return;
+        }
+
         //Ordenação sem .sort()
         nums = sort(nums);
 
         //Verifica repetidos.
-        int count = equal(nums);
+        int count = greatest_repeated(nums);
 
         if(count == 0){
             System.out.println("Não existe segundo maior");
         }
         else{
-            System.out.print("Segundo maior: " + nums[nums.length - 1 - count]);
+            System.out.print("Segundo maior: "+ nums[nums.length - 1 - count]);
         }
     }
 }
