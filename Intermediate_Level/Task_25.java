@@ -1,4 +1,6 @@
+import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Task_25 {
     public static void main(){
@@ -23,5 +25,15 @@ public class Task_25 {
                 System.out.print(parts[i] + " ");
             }
         }
+        
+        System.out.println('\n');
+
+        //Com LinkedHashSet.
+        Set<String> unique = new LinkedHashSet<>();
+        for(String part : parts){
+            unique.add(part);
+        }
+        System.out.println("Com LinkedHashSet");
+        System.out.println(unique);
     }
 }
