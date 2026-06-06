@@ -29,7 +29,7 @@ public class Task_29 {
         String[] arr_str = scanner.nextLine().trim().split("\\s+");
         scanner.close();
 
-        //Sem Arrays.sort(arr_str1) e Sem .CompareTo(0);
+        //Sem Arrays.sort(arr_str1) e Sem .CompareTo();
         for(int i = arr_str.length - 1; i > 0; i--){
             for(int j = 0; j < i; j++){
                 if(swap(arr_str[j], arr_str[j+1])){
