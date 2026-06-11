@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Task_40 {
     static Scanner scanner = new Scanner(System.in);
 
+    //Players object
     public enum Player {
         X('X'), O('O');
 
@@ -17,6 +18,7 @@ public class Task_40 {
         }
     }
 
+    //Troca o turno de jogadas
     static Player playerTurn(Player player){
         if(player == Player.X){
             return Player.O;
@@ -24,6 +26,7 @@ public class Task_40 {
         return Player.X;
     }
 
+    //Inicializa com espaços em branco
     static char[][] initialization(){
         char[][] board = new char[3][3];
 
@@ -35,12 +38,17 @@ public class Task_40 {
 
         return board;
     }
+
+    //Limpa a tela
     static void clearScreen() {
         System.out.print("\033[2J\033[H\n\n");
         System.out.flush();
     }
 
+    //Realiza a jogada
     static char[][] markPosition(char[][] board, Player player){
+
+        //Loop para entrada válida
         while(true){
             try{
                 int coordinateX = scanner.nextInt();
@@ -60,6 +68,7 @@ public class Task_40 {
         return board;
     }
 
+    //Imprime o estado atual
     static void displayBoard(char[][] board){
         clearScreen();
 
@@ -80,7 +89,9 @@ public class Task_40 {
         }
     }
 
+    //Verifica se o player atual ganhou
     static boolean hasWon(char[][] board, Player player){
+        
         //Linha
         for(int i = 0; i < 3; i++){
             if(board[i][0] == player.getSymbol() && board[i][1] == player.getSymbol() && board[i][2] == player.getSymbol()){
