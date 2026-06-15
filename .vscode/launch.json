@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "100tasks_JAVA_481a011c"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "100tasks_JAVA_481a011c"
+        },
+        {
+            "type": "java",
             "name": "Task_40",
             "request": "launch",
             "mainClass": "Task_40",
